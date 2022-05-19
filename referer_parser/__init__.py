@@ -54,7 +54,7 @@ class Referer(object):
             curr_uri = urlparse(curr_url)
             curr_host = curr_uri.hostname
             if curr_host == ref_host:
-                self.medium = 'internal'
+                self.medium = 'Direct'
                 return
 
         referer = self._lookup_referer(ref_host, ref_uri.path, True)
