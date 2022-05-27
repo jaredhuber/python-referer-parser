@@ -1,0 +1,32 @@
+{
+    "source": {
+      "required": "True",
+      "param": "utm_source",
+      "friendly": "source",
+      "classifier": {
+        "search": {},
+        "email": {},
+        "social": {}
+      }
+    },
+    "channel": {
+      "required": "True",
+      "param": "utm_medium",
+      "friendly": "channel"
+    },
+    "campaign": {
+      "required": "True",
+      "param": "utm_campaign",
+      "friendly": "campaign"
+    },
+    "ad_content": {
+      "required": "False",
+      "param": "utm_content",
+      "friendly": "ad_content"
+    },
+    "search_keyword": {
+      "required": "False",
+      "param": "utm_term",
+      "friendly": "search_keyword"
+    }
+  }
