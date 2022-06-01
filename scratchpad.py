@@ -46,10 +46,11 @@ for i in this_url_dict.keys():
     else:
         pass
     #check requireds
-    if len([(k,v) for k,v in source_data.items() if (k in requireds and v == '')])>0:
-        r = Referer(referer_url)
-        source_data['channel'] = r.medium
-        source_data['source'] = r.referer
-        source_data['search_keyword'] = r.search_term
+if len([(k,v) for k,v in source_data.items() if (k in requireds and v == '')]) != 0:
+    r = Referer(referer_url)
+    source_data['channel'] = r.medium
+    source_data['source'] = r.referer
+    source_data['search_keyword'] = r.search_term
         
 
+print(source_data)
